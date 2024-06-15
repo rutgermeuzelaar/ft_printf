@@ -6,16 +6,16 @@
 /*   By: rmeuzela <rmeuzela@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/07 17:23:02 by rmeuzela      #+#    #+#                 */
-/*   Updated: 2023/11/23 12:27:47 by rmeuzela      ########   odam.nl         */
+/*   Updated: 2024/06/15 19:11:18 by rmeuzela      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-# include "libft/libft.h"
 # include <stdarg.h>
 # include <unistd.h>
 # include <stddef.h>
+# include "../../include/libft.h"
 
 int		ft_print_character(char character);
 int		ft_print_string(char *string);
