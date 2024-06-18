@@ -6,11 +6,11 @@
 /*   By: rmeuzela <rmeuzela@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/16 16:32:08 by rmeuzela      #+#    #+#                 */
-/*   Updated: 2024/06/15 19:12:28 by rmeuzela      ########   odam.nl         */
+/*   Updated: 2023/11/23 10:41:13 by rmeuzela      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ft_printf.h"
+#include "ft_printf.h"
 
 size_t	ft_print_unsigned_decimal(unsigned int unsigned_decimal)
 {

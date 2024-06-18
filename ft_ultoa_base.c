@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_print_hexadecimal_upper.c                       :+:    :+:            */
+/*   ft_ultoa_base.c                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: rmeuzela <rmeuzela@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/11/16 16:51:34 by rmeuzela      #+#    #+#                 */
-/*   Updated: 2024/06/15 19:12:34 by rmeuzela      ########   odam.nl         */
+/*   Created: 2023/11/09 15:53:22 by rmeuzela      #+#    #+#                 */
+/*   Updated: 2023/11/23 10:40:41 by rmeuzela      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ft_printf.h"
+#include "ft_printf.h"
 
-size_t	ft_print_hexadecimal_upper(unsigned int number)
+size_t	ft_ultoa_base(size_t number, char *base_characters, \
+size_t base_len, size_t number_length)
 {
-	size_t	string_length;
-	size_t	base_characters_string_length;
-	char	*base_characters;
+	size_t		modulo;
 
-	base_characters = "0123456789ABCDEF";
-	base_characters_string_length = ft_strlen(base_characters);
-	string_length = ft_ultoa_base(number, base_characters, \
-	base_characters_string_length, 1);
-	return (string_length);
+	modulo = number % base_len;
+	number = number / base_len;
+	if (number)
+		number_length = ft_ultoa_base(number, base_characters, \
+		base_len, number_length + 1);
+	ft_putchar_fd(base_characters[modulo], 1);
+	return (number_length);
 }

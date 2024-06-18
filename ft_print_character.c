@@ -6,11 +6,11 @@
 /*   By: rmeuzela <rmeuzela@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/09 14:39:04 by rmeuzela      #+#    #+#                 */
-/*   Updated: 2024/06/15 19:12:39 by rmeuzela      ########   odam.nl         */
+/*   Updated: 2023/11/23 12:27:51 by rmeuzela      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_print_character(char character)
 {

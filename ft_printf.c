@@ -6,11 +6,11 @@
 /*   By: rmeuzela <rmeuzela@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/07 17:22:45 by rmeuzela      #+#    #+#                 */
-/*   Updated: 2024/06/15 19:03:16 by rmeuzela      ########   odam.nl         */
+/*   Updated: 2023/11/30 13:20:45 by rmeuzela      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ft_printf.h"
+#include "ft_printf.h"
 
 static int	conversion_table(char type, va_list *ap)
 {

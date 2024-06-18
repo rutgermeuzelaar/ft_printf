@@ -6,11 +6,11 @@
 /*   By: rmeuzela <rmeuzela@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/10 19:26:36 by rmeuzela      #+#    #+#                 */
-/*   Updated: 2024/06/15 19:12:32 by rmeuzela      ########   odam.nl         */
+/*   Updated: 2023/11/22 16:10:14 by rmeuzela      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ft_printf.h"
+#include "ft_printf.h"
 
 static int	get_arr_len(int n)
 {

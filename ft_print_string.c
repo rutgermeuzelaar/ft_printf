@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_ultoa_base.c                                    :+:    :+:            */
+/*   ft_print_string.c                                  :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: rmeuzela <rmeuzela@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/11/09 15:53:22 by rmeuzela      #+#    #+#                 */
-/*   Updated: 2024/06/15 19:12:23 by rmeuzela      ########   odam.nl         */
+/*   Created: 2023/11/09 14:54:38 by rmeuzela      #+#    #+#                 */
+/*   Updated: 2023/11/17 14:33:29 by rmeuzela      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ft_printf.h"
+#include "ft_printf.h"
 
-size_t	ft_ultoa_base(size_t number, char *base_characters, \
-size_t base_len, size_t number_length)
+int	ft_print_string(char *string)
 {
-	size_t		modulo;
+	size_t	string_length;
+	char	*null_string;
 
-	modulo = number % base_len;
-	number = number / base_len;
-	if (number)
-		number_length = ft_ultoa_base(number, base_characters, \
-		base_len, number_length + 1);
-	ft_putchar_fd(base_characters[modulo], 1);
-	return (number_length);
+	null_string = "(null)";
+	if (string == NULL)
+		string = null_string;
+	string_length = ft_strlen(string);
+	ft_putstr_fd(string, 1);
+	return (string_length);
 }
